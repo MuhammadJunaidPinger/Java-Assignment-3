@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Assignment 3</title>
+</head>
+<script>
+    
+    // Q1) Write a program that takes a number from user and display the multiplication table vertically from 1 to n.
+    // Input: 5 (For e.g)
+    // Expected Output:
+    // Multiplication table from 1 to 5
+    
+    var user = prompt("Enter any number");
+    for (var i = 1; i <=10; i++) {
+       var horizontal = ""
+        for (var j = 1; j <= +user; j++) { 
+            horizontal = horizontal + '|' + j + " x " + i + ' = ' + j*i
+        }
+        console.log(horizontal);
+    }
+// Write a program to create the following patterns in your browser. Take number of lines as an input.
+
+// a.
+// *****
+// *****
+// *****
+// *****
+     for (var i = 1; i <= 5; i++) {
+       console.log("*****");
+    }
+
+// b.
+// *
+// **
+// ***
+// ****
+// *****
+    for (var i = 0; i < 5; i++) {
+        var stars = "*"
+        for(var j = 0; j <i; j++) {
+            stars = stars + "*"
+        }
+        console.log(stars);
+    }
+
+// c.
+// *****
+// ****
+// ***
+// **
+// *
+    for (var i = 5; i >0; i--) {
+        var stars = '*'
+        for(var j = 1; j <i; j++) {
+            stars = stars + '*'
+        }
+        console.log(stars)
+    }
+
+</script>
+
+<body>
+    
+</body>
+</html>
